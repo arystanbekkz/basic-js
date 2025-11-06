@@ -13,8 +13,9 @@ const { NotImplementedError } = require('../lib');
 
 function encodeLine(str) {
   let encoded = '';
+  if (!str) return encoded;
   let count = 1;
-  for (let i = 1; i < str.length; i += 1) {
+  for (let i = 1; i <= str.length; i += 1) {
     if(str[i] === str[i - 1]) {
       count += 1;
     } else {
