@@ -1547,6 +1547,7 @@ describe('Make chain!', () => {
         '( 333 )~~( DEF )~~( NaN )~~( GHI )~~( ABC )~~( [object Object] )',
       );
     });
+    
     test('removeLinks works correctly', () => {
       assert.deepStrictEqual(
         chainMaker
